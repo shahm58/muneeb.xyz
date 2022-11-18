@@ -24,10 +24,11 @@
 
     <body>
         <header>
-            <a class = "logo" href = "index.html#home">
-                <img src = "img/logo.png" alt = "">
 
+            <a title="Home" class = "logo" href = "index.html#home">
+                <h1> &lt;/shah&gt; </h1>
             </a>
+
             <button class = "nav-toggle" aria-label="toggle navigation">
                 <span class = "hamburger"></span>
             </button>
@@ -36,7 +37,7 @@
                     <li class="nav__item"><a href="index.html#home" class="nav__link"> Home </a></li>
                     <li class="nav__item"><a href="index.html#aboutme" class="nav__link"> About Me </a></li>
                     <li class="nav__item"><a href="index.html#work" class="nav__link"> My Projects </a></li>
-                    <li class="nav__item"><a href="files/Resume 2021.pdf" class="nav__link"> My Resume </a></li>
+                    <li class="nav__item"><a href="files/Resume.pdf" class="nav__link"> My Resume </a></li>
                 </ul>
             </nav>
 
@@ -57,16 +58,69 @@
         </section>
         
 
-        <section class = "sec_desc">
-            <p>
-                Below you will find some of my projects that have taught me many technical and personal skills. These projects were completed in a University course called &quotIntegrated Cornerstone Design Projects&quot. These projects were all completed in separate groups, with everyone assigned a completely different role. This course did not only expand my skillset in Python and Inventor in a very enjoyable way, but it also allowed me to experience true projects that companies or individuals can actually benefit from. <br><br>
-                Asides from these projects below, you are currently viewing another one of my projects; this website. I started around the beginning of October 2021 with zero knowledge of HTML, CSS, or JavaScript and by the middle of November 2021, I was able to develop this portfolio webpage. It may not be perfect, but I am most definitely proud of my work. I gained vast knowledge of HTML and CSS without the assistance of any Frameworks like Bootstrap or Foundation by using many outside resources like Youtube as well as a few books I had around the house. During this project, I also learned a bit about JavaScript, and how useful it is to create responsive items on the webpage. I used JavaScript for the hamburger menu in the top right that has some animations, as well as the collapsable buttons that push down the webage for easier viewing. <br><br>
-                I currently am in the process of developing a Discord bot using Python. My goal is to be able to create a bot that joins the voice call and plays music after a user types a command like &quot/play&quot followed by a song name or song link. The process of this development has been delayed due to complications between Youtube and Discord, which creates conflict within the imported Youtube library. Currently, the bot is able to join the voice call on command and also read certain texts typed in chat and reply to them depending on who said it. I hope that the Youtube and Discord complications can be solved soon as I really would like to complete this project.            </p>
-
+        <section class = "sum_desc">
+            <p>Below are some of my biggest projects that I tackled throughout the past couple years that taught me my main technical skillsets. These projects expanded my knowledge on Python, C/C++ and Verilog, while also learning fundamental frameworks like SQL, PyQT, and Tkinter.</p>
         </section>
 
 
         <!--My Portfolio Items-->
+        <section class="proj_section" id="work">
+            <h3 class="p__section__subtitle" id = "pacemaker">Cardiac PaceMaker</h3>
+            <div class="sec_desc">
+                <p>
+                    The purpose of this project is to simulate the bioelectrical interface between a heart and a real-time microcontroller or in other words, create a cardiac pacemaker. The pacemaker is responsible for monitoring the operation of an individuals heart and providing electrical pulses at certain times to allow the heart to contract and perform its natural function. The pacemaker is required to perform correctly, otherwise the patient could die if there are incorrect electrical pulses. We were required to create the functionality of the pacemaker using MATLAB, and also  create the device controller-monitor (DCM) for the pacemaker. A login and signup form was required, with a maximum of 10 users allowed to register. The front-end UI was created using QT designer, that involved CSS for visual aspects, while the back-end portion of the project was done in Python with a future database update coming soon to store all the data on a MySQL server.                </p>
+            </div>
+
+            <div class = "py_info" >
+                <a class = "scroll-box">
+                    <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fshahm58%2FPaceMaker-GUI%2Fblob%2Fmain%2Fmain.py&style=night-owl&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+                </a>
+            
+                <a class = "py_img">
+                    <img src = "img/Pace1.jpg"  >
+                </a>
+
+            </div>
+        
+        
+        </section>
+
+        <section class="proj_section" id="work">
+            <h3 class="p__section__subtitle" id="Spatial">Spatial Mapping</h3>
+                
+            <div class="sec_desc">
+                <p>
+                    With the use of a Texas Instruments MSP432E401Y microcontroller, and the use of a VL53L1X time of flight sensor, the project was completed to develop a 3D reconstruction of a surrounding area. The system was programmed in embedded C, and the data reconstruction was done in Python. By using I2C serial communication between the microcontroller and the ToF sensor, the data was able to be exported onto the PC that the device was connected to. The data reconstruction was done by running a python script with imported libraries such as open3D, to read the exported coordinates, convert them, and construct the image on a geometric plane.
+                </p>                
+            </div>
+
+
+                <div class = "py_info" >
+                    <a class = "scroll-box">
+                        <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fshahm58%2FSpatial-Mapping%2Fblob%2Fmain%2FProject%2520Code%2FVerilog%2F2dx_studio_8c.c&style=night-owl&type=code&showLineNumbers=on&showFileMeta=on&showFullPath=on"></script>                
+                    <a class = "py_img">
+                        <img src = "img/Spat1.jpg"  >
+                    </a>
+
+
+                <div class = "spat_hall">
+                    
+                    <img src = "img/Spat3.jpg">
+
+                    <p>
+                        The hallway that was reconstructed using the system with Open3D
+                    </p>
+
+                </div>
+    
+                </div>
+        </section>
+
+
+        
+        
+        
+        
         <section class="proj_section" id="work">
             <!-- <h2 class="p__section__title">Projects</h2> -->
             <h3 class="p__section__subtitle" id = "python-proj" > Controllable Robotic Arm</h3> 
