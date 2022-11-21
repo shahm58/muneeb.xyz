@@ -1,240 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF=8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Muneeb's Porfolio</title>
-        <link rel = "shortcut icon" type="image/png" href = img/tabicon.png>
 
-        <link rel = "stylesheet" type = "text/css" href = "normalize.css" />
-        <link rel = "stylesheet"
-        href = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css
-        integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC"
-        crossorigin="anonymous" />
-        <link rel="stylesheet" type = "text/css" href="PortStyle.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-        <script src = https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp%3Bskin=desert ></script>
-        <script src="https://kit.fontawesome.com/6761b58558.js" crossorigin="anonymous"></script>
-    </head>
+<head>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muneeb's Porfolio</title>
+    <link rel="shortcut icon" type="image/png" href=img/tabicon.png>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css
+        integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="PortStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet">
+    <script
+        src=https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp%3Bskin=desert></script>
+    <script src="https://kit.fontawesome.com/6761b58558.js" crossorigin="anonymous"></script>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <body>
-        <header>
+<body>
+    <header>
 
-            <a title="Home" class = "logo" href = "index.html#home">
-                <h1> &lt;/shah&gt; </h1>
+        <a title="Home" class="logo" href="index.html#home">
+            <h1> &lt;/shah&gt; </h1>
+        </a>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#home" class="nav__link"> Home </a></li>
+                <li class="nav__item"><a href="index.html#aboutme" class="nav__link"> About Me </a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link"> My Projects </a></li>
+                <li class="nav__item"><a href="files/Resume.pdf" class="nav__link"> My Resume </a></li>
+            </ul>
+        </nav>
+
+
+
+
+    </header>
+    <!--Introduction-->
+    <section class="intro" id="home">
+        <p class="section__title section__title--intro">
+
+            My <strong> Projects </strong>
+
+        </p>
+        <p class="section__subtitle section__subtitle--intro">A brief summary</p>
+        <img class="intro__img" src="img/titleimg.jpg" alt="A picture of Muneeb">
+
+    </section>
+
+
+    <section class="sum_desc">
+        <p>Below are some of my biggest projects that I tackled throughout the past couple years that taught me my main
+            technical skillsets. These projects expanded my knowledge on Python, C/C++ and Verilog, while also learning
+            fundamental frameworks like SQL, PyQT, and Tkinter.</p>
+    </section>
+
+
+    <!--My Portfolio Items-->
+    <section class="proj_section" id="work">
+        <h3 class="p__section__subtitle" id="pacemaker">Cardiac PaceMaker</h3>
+        <p class="sec_desc"> The purpose of this project is to simulate the bioelectrical interface between a heart and
+            a real-time microcontroller or in other words, create a cardiac pacemaker. The pacemaker is responsible for
+            monitoring the operation of an individuals heart and providing electrical pulses at certain times to allow
+            the heart to contract and perform its natural function. The pacemaker is required to perform correctly,
+            otherwise the patient could die if there are incorrect electrical pulses. We were required to create the
+            functionality of the pacemaker using MATLAB, and also create the device controller-monitor (DCM) for the
+            pacemaker. A login and signup form was required, with a maximum of 10 users allowed to register. The
+            front-end UI was created using QT designer, that involved CSS for visual aspects, while the back-end portion
+            of the project was done in Python with a future database update coming soon to store all the data on a MySQL
+            server. </p>
+
+        <div class="pacemaker_section">
+            <a class="scroll-box">
+                <script
+                    src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fshahm58%2FPaceMaker-GUI%2Fblob%2Fmain%2Fmain.py&style=night-owl&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
             </a>
 
-            <button class = "nav-toggle" aria-label="toggle navigation">
-                <span class = "hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html#home" class="nav__link"> Home </a></li>
-                    <li class="nav__item"><a href="index.html#aboutme" class="nav__link"> About Me </a></li>
-                    <li class="nav__item"><a href="index.html#work" class="nav__link"> My Projects </a></li>
-                    <li class="nav__item"><a href="files/Resume.pdf" class="nav__link"> My Resume </a></li>
-                </ul>
-            </nav>
+            <img class="py_img" src="img/Pace1.jpg">
+        </div>
+    </section>
+
+    <section class="proj_section" id="work">
+        <h3 class="p__section__subtitle" id="Spatial">Spatial Mapping</h3>
+        <p class="sec_desc">With the use of a Texas Instruments MSP432E401Y microcontroller, and the use of a VL53L1X
+            time of flight sensor, the project was completed to develop a 3D reconstruction of a surrounding area. The
+            system was programmed in embedded C, and the data reconstruction was done in Python. By using I2C serial
+            communication between the microcontroller and the ToF sensor, the data was able to be exported onto the PC
+            that the device was connected to. The data reconstruction was done by running a python script with imported
+            libraries such as open3D, to read the exported coordinates, convert them, and construct the image on a
+            geometric plane.</p>
+
+        <div class="spatial_section">
+            <a class="scroll-box">
+                <script
+                    src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fshahm58%2FSpatial-Mapping%2Fblob%2Fmain%2FProject%2520Code%2FVerilog%2F2dx_studio_8c.c&style=night-owl&type=code&showLineNumbers=on&showFileMeta=on&showFullPath=on"></script>
+            </a>
+            <img class="py_img" src="img/Spat1.jpg">
+
+            <figure>
+                <img class="img_spat3" src="img/Spat3.jpg">
+                <figcaption>The hallway that was reconstructed using the system with Open3D</figcaption>
+            </figure>
+
+            <figure>
+                <img class="img_block" src="img/blockdiag.jpg">
+                <figcaption>Block Diagram for system communication</figcaption>
+            </figure>
+        </div>
+    </section>
 
 
 
 
-        </header>
-        <!--Introduction-->
-        <section class="intro" id = "home">
-            <p class="section__title section__title--intro">
 
-                My <strong> Projects </strong> 
 
+    <section class="proj_section" id="work">
+        <!-- <h2 class="p__section__title">Projects</h2> -->
+        <h3 class="p__section__subtitle" id="python-proj"> Controllable Robotic Arm</h3>
+
+
+        <div class="sec_desc">
+            <p>
+                The purpose of this python code was to control a virtual robotic arm to perform tasks in Quanser
+                Interactive Labs, using a separate server. The code was written and run on a Raspberry Pi 3, and our
+                goal was to pick up and drop off a container into specific location coordinates based on the
+                container&#39s color and size. The arm was programmed to move 4 parts which were the base rotation, base
+                angle, elbow, and fingers with several constraints. The code we created also had to incorporate the use
+                of a color sensor so the arm could determine which container it was. Additionally, the arm had to be
+                controlled within the interface with draggable buttons with certain values. These values correspond to
+                each component of the arm.
             </p>
-            <p class="section__subtitle section__subtitle--intro">A brief summary</p>
-            <img class="intro__img" src="img/titleimg.jpg" alt= "A picture of Muneeb"  >
+        </div>
 
-        </section>
-        
-
-        <section class = "sum_desc">
-            <p>Below are some of my biggest projects that I tackled throughout the past couple years that taught me my main technical skillsets. These projects expanded my knowledge on Python, C/C++ and Verilog, while also learning fundamental frameworks like SQL, PyQT, and Tkinter.</p>
-        </section>
-
-
-        <!--My Portfolio Items-->
-        <section class="proj_section" id="work">
-            <h3 class="p__section__subtitle" id = "pacemaker">Cardiac PaceMaker</h3>
-            <div class="sec_desc">
-                <p>
-                    The purpose of this project is to simulate the bioelectrical interface between a heart and a real-time microcontroller or in other words, create a cardiac pacemaker. The pacemaker is responsible for monitoring the operation of an individuals heart and providing electrical pulses at certain times to allow the heart to contract and perform its natural function. The pacemaker is required to perform correctly, otherwise the patient could die if there are incorrect electrical pulses. We were required to create the functionality of the pacemaker using MATLAB, and also  create the device controller-monitor (DCM) for the pacemaker. A login and signup form was required, with a maximum of 10 users allowed to register. The front-end UI was created using QT designer, that involved CSS for visual aspects, while the back-end portion of the project was done in Python with a future database update coming soon to store all the data on a MySQL server.                </p>
-            </div>
-
-            <div class = "py_info" >
-                <a class = "scroll-box">
-                    <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fshahm58%2FPaceMaker-GUI%2Fblob%2Fmain%2Fmain.py&style=night-owl&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-                </a>
-            
-                <a class = "py_img">
-                    <img src = "img/Pace1.jpg"  >
-                </a>
-
-            </div>
-        
-        
-        </section>
-
-        <section class="proj_section" id="work">
-            <h3 class="p__section__subtitle" id="Spatial">Spatial Mapping</h3>
-                
-            <div class="sec_desc">
-                <p>
-                    With the use of a Texas Instruments MSP432E401Y microcontroller, and the use of a VL53L1X time of flight sensor, the project was completed to develop a 3D reconstruction of a surrounding area. The system was programmed in embedded C, and the data reconstruction was done in Python. By using I2C serial communication between the microcontroller and the ToF sensor, the data was able to be exported onto the PC that the device was connected to. The data reconstruction was done by running a python script with imported libraries such as open3D, to read the exported coordinates, convert them, and construct the image on a geometric plane.
-                </p>                
-            </div>
-
-
-                <div class = "py_info" >
-                    <a class = "scroll-box">
-                        <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fshahm58%2FSpatial-Mapping%2Fblob%2Fmain%2FProject%2520Code%2FVerilog%2F2dx_studio_8c.c&style=night-owl&type=code&showLineNumbers=on&showFileMeta=on&showFullPath=on"></script>                
-                    <a class = "py_img">
-                        <img src = "img/Spat1.jpg"  >
-                    </a>
-
-
-                <div class = "spat_hall">
-                    
-                    <img src = "img/Spat3.jpg">
-
-                    <p>
-                        The hallway that was reconstructed using the system with Open3D
-                    </p>
-
-                </div>
-    
-                </div>
-        </section>
-
-
-        
-        
-        
-        
-        <section class="proj_section" id="work">
-            <!-- <h2 class="p__section__title">Projects</h2> -->
-            <h3 class="p__section__subtitle" id = "python-proj" > Controllable Robotic Arm</h3> 
-            
-
-            <div class = "sec_desc" >
-                <p> 
-                    The purpose of this python code was to control a virtual robotic arm to perform tasks in Quanser Interactive Labs, using a separate server. The code was written and run on a Raspberry Pi 3, and our goal was to pick up and drop off a container into specific location coordinates based on the container&#39s color and size. The arm was programmed to move 4 parts which were the base rotation, base angle, elbow, and fingers with several constraints. The code we created also had to incorporate the use of a color sensor so the arm could determine which container it was. Additionally, the arm had to be controlled within the interface with draggable buttons with certain values. These values correspond to each component of the arm. 
-                </p>
-            </div>
-
-            <div class = "py_info" >
-                <a class = "scroll-box">
-                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fshahm58%2FQArm-Controller%2Fblob%2Fmain%2FQArm-Controller.py&style=night-owl&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=off"></script>      
-                </a>
-            
-                <a class = "py_img">
-                    <img src = "img/item5.png"  >
-                </a>
-
-            </div>
-
-        </section>
-
-                <!--My Portfolio Items-->
-        <section class="proj_section" id="work">
-            <h3 class="p__section__subtitle" id = "cad-proj">Client Assistive Product</h3> 
-            
-
-            <div class = "sec_desc" >
-                <p> 
-                    The purpose of this project was to create a product in Autodesk Inventor that would fit the needs of a client who suffered from lymphoma. We had met with the client a couple of times to discuss design possibilities regarding what she had most difficulty with, and what exactly would be most comfortable for her. With this, we split up as a group to individually create prototypes of our own designs. My thought process included her difficulty of holding a utensil with pressure and comfort, so I put together a rough sketch and created this prototype out of cardboard. The prototype was designed to effortlessly hold a utensil without the need for pressure, and still be accurate and stable.            </div>
-
-            <div class = "cad_draw" >
-                <a class = "sketch">
-                    <img src = "img/sketch.jpg">
-                </a>
-            
-                <a class = "proto_img">
-                    <img src = "img/proto.jpeg"  >
-                </a>
-
-            </div>
-
-            <div class = "sec_desc">
-                <p> 
-                    We then collaborated, narrowed down, and combined prototypes to finalize the product. Out of the 250+ teams in Engineering assigned with this project, I was able to push our team to success as the project lead to place top 10. Being the project lead taught me how to build more effective relationships, especially when there are individuals who are in need of help. This experience was a huge achievement as not only were we evaluated by faculty, the client herself came through to consider our product.                 </p>
-            </div>
-
-            <div class = "cad_draw" >
-                <a class = "cad_final">
-                    <img src = "img/item3.jpg">
-                </a>
-            
- 
-
-            </div>
-
-
-
-        </section>
-
-
-
-
-        <section class="to-top" >
-
-            <a href = "files/Resume 2021.pdf" >
-                <button class = "btn">View My Resume</button>
+        <div class="py_info">
+            <a class="scroll-box">
+                <script
+                    src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fshahm58%2FQArm-Controller%2Fblob%2Fmain%2FQArm-Controller.py&style=night-owl&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=off"></script>
             </a>
 
-            <button onclick="topFunction()" class = "btn">Back To Top</button>
+            <a class="py_img">
+                <img src="img/item5.png">
+            </a>
 
-        </section>
+        </div>
+
+    </section>
+
+    <!--My Portfolio Items-->
+    <section class="proj_section" id="work">
+        <h3 class="p__section__subtitle" id="cad-proj">Client Assistive Product</h3>
 
 
-        <div class = "container-bar">
-            <div id = "indicator"></div>
+        <div class="sec_desc">
+            <p>
+                The purpose of this project was to create a product in Autodesk Inventor that would fit the needs of a
+                client who suffered from lymphoma. We had met with the client a couple of times to discuss design
+                possibilities regarding what she had most difficulty with, and what exactly would be most comfortable
+                for her. With this, we split up as a group to individually create prototypes of our own designs. My
+                thought process included her difficulty of holding a utensil with pressure and comfort, so I put
+                together a rough sketch and created this prototype out of cardboard. The prototype was designed to
+                effortlessly hold a utensil without the need for pressure, and still be accurate and stable.
+        </div>
+
+        <div class="cad_draw">
+            <a class="sketch">
+                <img src="img/sketch.jpg">
+            </a>
+
+            <a class="proto_img">
+                <img src="img/proto.jpeg">
+            </a>
+
+        </div>
+
+        <div class="sec_desc">
+            <p>
+                We then collaborated, narrowed down, and combined prototypes to finalize the product. Out of the 250+
+                teams in Engineering assigned with this project, I was able to push our team to success as the project
+                lead to place top 10. Being the project lead taught me how to build more effective relationships,
+                especially when there are individuals who are in need of help. This experience was a huge achievement as
+                not only were we evaluated by faculty, the client herself came through to consider our product. </p>
+        </div>
+
+        <div class="cad_draw">
+            <a class="cad_final">
+                <img src="img/item3.jpg">
+            </a>
+
+
+
         </div>
 
 
-        
 
-        <!--Footer-->
-        <footer class = "footer">
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="mailto:shahm58@mcmaster.ca">
-                        <i class="far fa-envelope"></i>
-                    </a>
-                
-                
-                </li>
+    </section>
 
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/muneeb-shah">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                
-                
-                </li>
 
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.github.com/shahm58">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
 
-            </ul>
-        </footer>
 
-        
+    <section class="to-top">
 
-        <script src = "index.js"> </script>
+        <a href="files/Resume 2021.pdf">
+            <button class="btn">View My Resume</button>
+        </a>
 
-    </body>
-</html> 
+        <button onclick="topFunction()" class="btn">Back To Top</button>
+
+    </section>
+
+
+    <div class="container-bar">
+        <div id="indicator"></div>
+    </div>
+
+
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="mailto:shahm58@mcmaster.ca">
+                    <i class="far fa-envelope"></i>
+                </a>
+
+
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/muneeb-shah">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.github.com/shahm58">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+
+
+    <script src="index.js"> </script>
+
+</body>
+
+</html>

@@ -2,306 +2,334 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Muneeb's Porfolio</title>
-        <link rel = "shortcut icon" type="image/png" href = img/tabicon.png>
-        <link rel = "stylesheet" type = "text/css" href = "normalize.css" />
-        <link rel = "stylesheet"
-        href = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css
-        integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC"
-        crossorigin="anonymous" />
-        <link rel="stylesheet" type = "text/css" href="PortStyle.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-        <script src = https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp%3Bskin=desert ></script>
-        <script src="https://kit.fontawesome.com/6761b58558.js" crossorigin="anonymous"></script>
-    </head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muneeb's Porfolio</title>
+    <link rel="shortcut icon" type="image/png" href=img/tabicon.png>
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css
+        integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="PortStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet">
+    <script
+        src=https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=ruby&amp%3Bskin=desert></script>
+    <script src="https://kit.fontawesome.com/6761b58558.js" crossorigin="anonymous"></script>
+</head>
 
-
-    <body>
-        <header>
-
-            <a title="Home" class = "logo" href = "#home">
-                <h1> &lt;/shah&gt; </h1>
-            </a>
-
-            <!-- <p> WEBSITE CURRENTLY UNDERGOING UPDATES. PLEASE RETURN IN 24-48 HOURS</p> -->
-
-            <button class = "nav-toggle" aria-label="toggle navigation">
-                <span class = "hamburger"></span>
-            </button>
-
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li><a href="#home" class="nav__link"> Home </a></li>
-                    <li><a href="#aboutme" class="nav__link"> About Me </a></li>
-                    <li><a href="#work" class="nav__link"> My Projects </a></li>
-                    <li><a href="files/Resume.pdf" class="nav__link"> My Resume </a></li>
-                </ul>
-            </nav>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+<body>
+    <header>
 
+        <a title="Home" class="logo" href="#home">
+            <h1> &lt;/shah&gt; </h1>
+        </a>
 
-        </header>
-        <!--Introduction-->
-        <section class="intro" id = "home">
-            <p class="section__title section__title--intro">
+        <!-- <p> WEBSITE CURRENTLY UNDERGOING UPDATES. PLEASE RETURN IN 24-48 HOURS</p> -->
 
-                Hi, I'm <strong> Muneeb Shah </strong>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
 
-            </p>
-            <p class="section__subtitle section__subtitle--intro">Computer Engineering Student</p>
-            <img class="intro__img" src="img/portrait1.jpg" alt= "A picture of Muneeb"  >
-
-        </section>
-
-        <section class = "section_links">
-            <ul class="social-list">
-
-                <li class="social-list__item">
-                    <a class="social-list__link" title="View My Resume" href = "files/Resume.pdf">
-                        <i class="far fa-file"></i>
-                    </a>
-
-
-                </li>
-
-                <li class="social-list__item">
-                    <a class="social-list__link" title="shahm58@mcmaster.ca" href="mailto:shahm58@mcmaster.ca">
-                        <i class="far fa-envelope"></i>
-                    </a>
-
-
-                </li>
-
-
-                <li class="social-list__item">
-                    <a class="social-list__link" title="linkedin.com/in/muneeb-shah" href="https://www.linkedin.com/in/muneeb-shah">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-
-
-                </li>
-
-                <li class="social-list__item">
-                    <a class="social-list__link" title="github.com/shahm58" href="https://www.github.com/shahm58">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-
-
-
-
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="#home" class="nav__link"> Home </a></li>
+                <li><a href="#aboutme" class="nav__link"> About Me </a></li>
+                <li><a href="#work" class="nav__link"> My Projects </a></li>
+                <li><a href="files/Resume.pdf" class="nav__link"> My Resume </a></li>
             </ul>
-
-        </section>
-
+        </nav>
 
 
 
-        <!--About Me-->
-        <section class="about-me" id = "aboutme">
-            <h2 class="section__title section__title--aboutme">About Me</h2>
-            <p class="section__subtitle--aboutme"></p>
-            <div class="aboutme__body">
-                <!-- <h3></h3> -->
-                <p>I am a passionate and determined third-year student enrolled in the Computer Engineering (B.Eng) Co-op program at McMaster University. I have a strong background in management and leadership roles, as well as exemplary communication and teamwork skills that would be a great asset to any team. My ability to problem solve would heavily benefit any task at hand within a group, or on my own.<br><br>Asides from my professional life, I enjoy going to the gym nearly every day to achieve my fitness goals. I also enjoy cooking, where I have learned to make many dishes and barbecues. I enjoy looking into cars in my free time, specifically Japanese and German cars, which I hope to create a collection of one day. </p>
-            </div>
-            <img class = "about-me__img" src = "img/portrait2.png" alt = "A picture of Muneeb" >
 
-        </section>
+    </header>
+    <!--Introduction-->
+    <section class="intro" id="home">
+        <p class="section__title section__title--intro">
+
+            Hi, I'm <strong> Muneeb Shah </strong>
+
+        </p>
+        <p class="section__subtitle section__subtitle--intro">Computer Engineering Student</p>
+        <img class="intro__img" src="img/portrait1.jpg" alt="A picture of Muneeb">
+
+    </section>
+
+    <section class="section_links">
+        <ul class="social-list">
+
+            <li class="social-list__item">
+                <a class="social-list__link" title="View My Resume" href="files/Resume.pdf">
+                    <i class="far fa-file"></i>
+                </a>
 
 
-        <section class = skillset__section>
-            <p class = "skillset__title"> <strong>My Technical Skillset</strong> </p>
+            </li>
 
-            <div class = "skillset" >
-                <div class = "collapse">
-                    <button class = "collapse__button"> Python </button>
-                        <div class="collapse__content">
-                            <p>
-                                2 years of experience. I grasped the fundamentals of object-oriented programming with several projects and course-work. I am currently working on a course project with back-end programming in Python.                     </div>
+            <li class="social-list__item">
+                <a class="social-list__link" title="shahm58@mcmaster.ca" href="mailto:shahm58@mcmaster.ca">
+                    <i class="far fa-envelope"></i>
+                </a>
+
+
+            </li>
+
+
+            <li class="social-list__item">
+                <a class="social-list__link" title="linkedin.com/in/muneeb-shah"
+                    href="https://www.linkedin.com/in/muneeb-shah">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" title="github.com/shahm58" href="https://www.github.com/shahm58">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+
+
+
+        </ul>
+
+    </section>
+
+
+
+
+    <!--About Me-->
+    <section class="about-me" id="aboutme">
+        <h2 class="section__title section__title--aboutme">About Me</h2>
+        <p class="section__subtitle--aboutme"></p>
+        <div class="aboutme__body">
+            <!-- <h3></h3> -->
+            <p>I am a passionate and determined third-year student enrolled in the Computer Engineering (B.Eng) Co-op
+                program at McMaster University. I have a strong background in management and leadership roles, as well
+                as exemplary communication and teamwork skills that would be a great asset to any team. My ability to
+                problem solve would heavily benefit any task at hand within a group, or on my own.<br><br>Asides from my
+                professional life, I enjoy going to the gym nearly every day to achieve my fitness goals. I also enjoy
+                cooking, where I have learned to make many dishes and barbecues. I enjoy looking into cars in my free
+                time, specifically Japanese and German cars, which I hope to create a collection of one day. </p>
+        </div>
+        <img class="about-me__img" src="img/portrait2.png" alt="A picture of Muneeb">
+
+    </section>
+
+
+    <section class=skillset__section>
+        <p class="skillset__title"> <strong>My Technical Skillset</strong> </p>
+
+        <div class="skillset">
+            <div class="collapse">
+                <button class="collapse__button"> Python </button>
+                <div class="collapse__content">
+                    <p>
+                        2 years of experience. I grasped the fundamentals of object-oriented programming with several
+                        projects and course-work. I am currently working on a course project with back-end programming
+                        in Python.
                 </div>
-
-                <div class = "collapse">
-                    <button class = "collapse__button"> C/C++ </button>
-                        <div class="collapse__content">
-                            <p>
-                                One year of experience. I have completed some courses in university, including Data Structures and Algorithms, in both C and C++. </p>
-                        </div>
-                </div>
-
-                <div class = "collapse">
-                    <button class = "collapse__button">Front-End </button>
-                        <div class="collapse__content">
-                            <p>
-                                One year of experience. I taught myself HTML, CSS, and JavaScript to create this website. I am also working on a course project involving front-end and back-end programming. </p>
-                        </div>
-                </div>
-
-                <div class = "collapse">
-                    <button class = "collapse__button">Verilog</button>
-                        <div class="collapse__content">
-                            <p>
-                                One year of experience. I have completed a Microprocessor Systems course that had labs and a project completed in Verilog.                       </div>
-                </div>
-
-                <div class = "collapse">
-                    <button class = "collapse__button">Git/Github</button>
-                        <div class="collapse__content">
-                            <p>
-                                Over 3 years of experience. I use GitHub to control all versions of my labs and projects.                        </div>
-                </div>
-
-                <div class = "collapse">
-                    <button class = "collapse__button">PyQT</button>
-                        <div class="collapse__content">
-                            <p>
-                                Less than 6 months of experience. Currently working on a course project to create a login database to store heart data by using PyQT and QTdesigner for the front-end and back-end aspects of the application.                        </div>
-                </div>
-
-                <div class = "collapse">
-                    <button class = "collapse__button">Quartus</button>
-                        <div class="collapse__content">
-                            <p>
-                                One year of experience. Completed labs and projects in University courses using this editor.                     </div>
-                </div>
-
-
-
-                <div class = "collapse">
-                    <button class = "collapse__button"> Media Production </button>
-                        <div class="collapse__content">
-                            <p>
-                                Over 4 years of experience with Photoshop and Premier Pro. I am currently a marketing associate for McMaster PSA to photograph and record events to create video edits for social media promotion.                       </p>
-                        </div>
-                </div>
-
-
-
-            </div>
-
-
-        </section>
-
-        <section class = "skillset__section">
-            <p class = "skillset__title"> <strong>My Personal Skillset</strong></p>
-
-            <div class = "skillset" >
-                <div class = "collapse">
-                    <button class = "collapse__button"> Leadership </button>
-                        <div class="collapse__content">
-                            <p>
-                                Project manager at a Toronto-based construction company. I was responsible for managing an entire home improvement project from start to finish.  </p>
-                        </div>
-                </div>
-
-                <div class = "collapse">
-                    <button class = "collapse__button"> Communication </button>
-                        <div class="collapse__content">
-                            <p>
-                                Project supervisor at a Toronto-based construction company. I communicated closely with the client to ensure satisfaction. I also mentored 6 apprentices to become permanent assets.
-                            </p>
-                        </div>
-                </div>
-
-                <div class = "collapse">
-                    <button class = "collapse__button"> Collaboration </button>
-                        <div class="collapse__content">
-                            <p>
-                                Over 300 hours of volunteer experience in the GTA with several different groups. Previous work experience in large groups also allowed me to master this skill.
-                            </p>
-                        </div>
-                </div>
-
-                <div class = "collapse">
-                    <button class = "collapse__button"> Self-management </button>
-                        <div class="collapse__content">
-                            <p>
-                                I have strong problem-solving and time-management skills. I also prevent obstacles from affecting my work by working around any problem and thinking ahead
-                            </p>
-                        </div>
-                </div>
-
-
-
             </div>
 
-
-        </section>
-
-
-
-        <!--My Work-->
-
-        <section class="my-work">
-            <h2 id = "work" class="p__section__title">Projects</h2>
-            
-            <div class="work">
-                <img src="img/Pace1.jpg" alt="" class="workimg">
-                <img src="img/Pace2.jpg" alt="" class="workimg">
-                <img src="img/Spat1.jpg" alt="" class="workimg">
-                <img src="img/Spat2.jpg" alt="" class="workimg">
-                <img src="img/music.jpg" alt="" class="workimg">
-                <img src="img/qarm1.png" alt="" class="workimg">
-                <img src="img/qarm2.jpg" alt="" class="workimg">
-                <img src="img/assist.jpg" alt="" class="workimg">
+            <div class="collapse">
+                <button class="collapse__button"> C/C++ </button>
+                <div class="collapse__content">
+                    <p>
+                        One year of experience. I have completed some courses in university, including Data Structures
+                        and Algorithms, in both C and C++. </p>
+                </div>
             </div>
-       
-            <a href= "port-item.html">
-                <button class="btn"  >View My Projects</button>
-            </a>
 
-            <a href = "files/Resume.pdf" >
-                <button class = "btn">View My Resume</button>
-            </a>
+            <div class="collapse">
+                <button class="collapse__button">Front-End </button>
+                <div class="collapse__content">
+                    <p>
+                        One year of experience. I taught myself HTML, CSS, and JavaScript to create this website. I am
+                        also working on a course project involving front-end and back-end programming. </p>
+                </div>
+            </div>
 
-        </section>
+            <div class="collapse">
+                <button class="collapse__button">Verilog</button>
+                <div class="collapse__content">
+                    <p>
+                        One year of experience. I have completed a Microprocessor Systems course that had labs and a
+                        project completed in Verilog.
+                </div>
+            </div>
+
+            <div class="collapse">
+                <button class="collapse__button">Git/Github</button>
+                <div class="collapse__content">
+                    <p>
+                        Over 3 years of experience. I use GitHub to control all versions of my labs and projects.
+                </div>
+            </div>
+
+            <div class="collapse">
+                <button class="collapse__button">PyQT</button>
+                <div class="collapse__content">
+                    <p>
+                        Less than 6 months of experience. Currently working on a course project to create a login
+                        database to store heart data by using PyQT and QTdesigner for the front-end and back-end aspects
+                        of the application.
+                </div>
+            </div>
+
+            <div class="collapse">
+                <button class="collapse__button">Quartus</button>
+                <div class="collapse__content">
+                    <p>
+                        One year of experience. Completed labs and projects in University courses using this editor.
+                </div>
+            </div>
 
 
-        <section class="to-top" >
-            <button onclick="topFunction()" class = "btn">Back To Top</button>
-        </section>
 
-        <div class = "container-bar">
-            <div id = "indicator"></div>
+            <div class="collapse">
+                <button class="collapse__button"> Media Production </button>
+                <div class="collapse__content">
+                    <p>
+                        Over 4 years of experience with Photoshop and Premier Pro. I am currently a marketing associate
+                        for McMaster PSA to photograph and record events to create video edits for social media
+                        promotion. </p>
+                </div>
+            </div>
+
+
+
         </div>
 
-        <!--Footer-->
-        <footer class = "footer">
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="mailto:shahm58@mcmaster.ca">
-                        <i class="far fa-envelope"></i>
-                    </a>
+
+    </section>
+
+    <section class="skillset__section">
+        <p class="skillset__title"> <strong>My Personal Skillset</strong></p>
+
+        <div class="skillset">
+            <div class="collapse">
+                <button class="collapse__button"> Leadership </button>
+                <div class="collapse__content">
+                    <p>
+                        Project manager at a Toronto-based construction company. I was responsible for managing an
+                        entire home improvement project from start to finish. </p>
+                </div>
+            </div>
+
+            <div class="collapse">
+                <button class="collapse__button"> Communication </button>
+                <div class="collapse__content">
+                    <p>
+                        Project supervisor at a Toronto-based construction company. I communicated closely with the
+                        client to ensure satisfaction. I also mentored 6 apprentices to become permanent assets.
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse">
+                <button class="collapse__button"> Collaboration </button>
+                <div class="collapse__content">
+                    <p>
+                        Over 300 hours of volunteer experience in the GTA with several different groups. Previous work
+                        experience in large groups also allowed me to master this skill.
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse">
+                <button class="collapse__button"> Self-management </button>
+                <div class="collapse__content">
+                    <p>
+                        I have strong problem-solving and time-management skills. I also prevent obstacles from
+                        affecting my work by working around any problem and thinking ahead
+                    </p>
+                </div>
+            </div>
 
 
-                </li>
 
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/muneeb-shah">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+        </div>
 
 
-                </li>
+    </section>
 
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.github.com/shahm58">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
 
-            </ul>
-        </footer>
 
-        <script src = "index.js"> </script>
+    <!--My Work-->
 
-    </body>
+    <section class="my-work">
+        <h2 id="work" class="p__section__title">Projects</h2>
+
+        <div class="work">
+            <img src="img/Pace1.jpg" alt="" class="workimg">
+            <img src="img/Pace2.jpg" alt="" class="workimg">
+            <img src="img/Spat1.jpg" alt="" class="workimg">
+            <img src="img/Spat2.jpg" alt="" class="workimg">
+            <img src="img/music.jpg" alt="" class="workimg">
+            <img src="img/qarm1.png" alt="" class="workimg">
+            <img src="img/qarm2.jpg" alt="" class="workimg">
+            <img src="img/assist.jpg" alt="" class="workimg">
+        </div>
+
+        <a href="port-item.html">
+            <button class="btn">View My Projects</button>
+        </a>
+
+        <a href="files/Resume.pdf">
+            <button class="btn">View My Resume</button>
+        </a>
+
+    </section>
+
+
+    <section class="to-top">
+        <button onclick="topFunction()" class="btn">Back To Top</button>
+    </section>
+
+    <div class="container-bar">
+        <div id="indicator"></div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="mailto:shahm58@mcmaster.ca">
+                    <i class="far fa-envelope"></i>
+                </a>
+
+
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/muneeb-shah">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.github.com/shahm58">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+    <script src="index.js"> </script>
+
+</body>
+
 </html>
