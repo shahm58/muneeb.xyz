@@ -55,3 +55,22 @@ function scrollBar(){
 window.onscroll = function(){
   scrollBar();
 }
+
+let slideIndex = 0;
+showSlides(); // Initialize the carousel
+
+function moveSlide(n) {
+    const slides = document.getElementsByClassName("carousel-images")[0].getElementsByTagName("img");
+    slideIndex = (slideIndex + n + slides.length) % slides.length; // Calculate the next slide index, wrapping around if necessary
+    showSlides();
+}
+
+function showSlides() {
+    const slides = document.getElementsByClassName("carousel-images")[0].getElementsByTagName("img");
+    const container = document.querySelector(".carousel-images");
+    Array.from(slides).forEach(slide => slide.classList.remove("active")); // Remove active class from all images
+    slides[slideIndex].classList.add("active"); // Add active class to the current image
+    const offsetWidth = slideIndex * -100; // Calculate the offset to slide to the current image
+    container.style.transform = `translateX(${offsetWidth}%)`; // Apply the transform to slide
+}
+
