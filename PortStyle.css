@@ -327,6 +327,26 @@ h3 {
     font-size: var(--fs-h3)
 }
 
+
+ .intro {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    padding: 1em; 
+} 
+
+.intro__img {
+    max-width: 300px; 
+    margin-bottom: 1em; 
+}
+
+.section__subtitle--intro {
+    margin-top: 1em; 
+    width: 100%;
+    text-align: center; 
+}
+
 .section__title {
     margin-bottom: 0em;
     font-size: var(--fs-h1);
@@ -371,15 +391,38 @@ h3 {
 
 /* ****************intro section STYLE SETUP *******************/
 
-.intro {
+/* .intro {
     position: relative;
 }
 
 .intro__img {
     box-shadow: var(--bs);
+    max-width: 300px;
+    
+} */
+
+@media (max-width: 400px) {
+
+    body{
+        background: #00c3ff;
+    }
+
 }
 
 @media (min-width: 1000px) {
+    
+    body {
+
+        background: var(--clr-background);
+        color: var(--clr-light);
+        margin: 0;
+        font-family: var(--ff-primary);
+        font-size: var(--fs-body);
+        line-height: 1.6;
+    }
+    
+
+
     .intro {
         display: grid;
         width: min-content;
@@ -499,6 +542,7 @@ h3 {
     font-family: var(--fs-body);
     background: var(--clr-dark);
     border-radius: 20px;
+    
 
 }
 
@@ -508,23 +552,45 @@ h3 {
 }
 
 
+/* -------------------- FOR NEW SKILLSET SECTION JAN 2025 */
+.skillset-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2em; 
+    max-width: 1300px; 
+    margin: 0 auto; 
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 .skillset {
     display: grid;
-    column-gap: 1em;
+    row-gap: 1em; 
     text-align: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin-bottom: 1.5em;
-
+    grid-template-columns: 1fr; 
+    margin-bottom: 0em;
 }
 
 .skillset__section {
-    max-width: 1000px;
-    margin: 0 auto;
+    background: #111;
+    padding: 1em; 
+    border-radius: 8px; 
+    box-shadow: 0 1px 1.5px var(--clr-accent)
 }
 
-.skillset__title {
-    text-align: left;
+.skill_section_title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
+
+
+
+/* ------------------- END NEW SKILLSET SECTION UPDATES */
+
+
+
+
 
 
 
@@ -540,59 +606,7 @@ h3 {
     text-align: center;
 }
 
-/* .workimg {
-    width: 400px;
-    height: 200px;
-    object-fit: cover;
-} */
 
-
-
-/* .work {
-    max-width: 1600px;
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
-}
-
-@media (min-width: 600px) {
-    .work {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .workimg {
-        width: 400px;
-        height: 200px;
-        object-fit: cover;
-    }
-
-
-
-} */
-
-/* @media (min-width: 900px) {
-    .work {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .workimg {
-        width: 300px;
-        height: 150px;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 1000px) {
-    .work {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .workimg {
-        width: 400px;
-        height: 200px;
-        object-fit: cover;
-    }
-} */
 
 .carousel {
     position: relative;
@@ -757,6 +771,11 @@ h3 {
     margin-top: 3em;
 }
 
+.arm_img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (min-width: 800px) {
     .sec_desc {
         margin-top: 5em;
@@ -820,6 +839,17 @@ h3 {
 
 
 .cad_draw {
+    display: inline-grid;
+    column-gap: 1em;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin-bottom: 1.5em;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.arm_img {
     display: inline-grid;
     column-gap: 1em;
     text-align: center;
